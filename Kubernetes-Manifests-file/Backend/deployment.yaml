@@ -55,10 +55,10 @@ spec:
           initialDelaySeconds: 5
           periodSeconds: 5
           successThreshold: 1
-        # startupProbe:
-        #   httpGet:
-        #     path: /started
-        #     port: 3500
-        #   initialDelaySeconds: 0
-        #   periodSeconds: 10
-        #   failureThreshold: 30
+        startupProbe:
+          httpGet:
+            path: /started
+            port: 3500
+          initialDelaySeconds: 0
+          periodSeconds: 10
+          failureThreshold: 30
